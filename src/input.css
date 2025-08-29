@@ -1,0 +1,38 @@
+@import "tailwindcss";
+@theme{
+    --font-heading:"Playwrite CA", cursive;
+    --text-shadow-hover:rgba(0, 0, 0, 0.35) 5px 5px 2px;
+    --shadow-hover:rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+    --shadow-skill:rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    --shadow-card:rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+#html{
+    background: conic-gradient(rgb(252, 166, 31) 306deg, rgb(237, 237, 237) 0deg)
+}
+#css{
+    background: conic-gradient(rgb(179, 0, 255) 306deg, rgb(237, 237, 237) 0deg)
+}
+#js{
+    background: conic-gradient(rgb(246, 255, 0) 270deg, rgb(237, 237, 237) 0deg)
+}
+#ts{
+    background: conic-gradient(rgb(3, 129, 248) 252deg, rgb(237, 237, 237) 0deg)
+}
+#java{
+    background: conic-gradient(rgb(252, 166, 31) 324deg, rgb(237, 237, 237) 0deg)
+}
+#react{
+    background: conic-gradient(rgb(1, 247, 255) 216deg ,rgb(237, 237, 237) 20deg)
+}
+#tail{
+    background: conic-gradient(rgb(4, 223, 239) 192deg, rgb(237, 237, 237) 0deg)
+}
+#figma{
+    background: conic-gradient(rgb(4, 249, 172) 96deg, rgb(237, 237, 237) 0deg)
+}
+#video{
+    background: conic-gradient(rgb(7, 118, 22) 180deg, rgb(237, 237, 237) 0deg)
+}
+html {
+  scroll-behavior: smooth;
+}

@@ -1,0 +1,844 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PortPholio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playwrite+CA:wght@100..400&display=swap"
+      rel="stylesheet"
+    />
+    <link href="./output.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+      integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+
+  <body>
+    <a
+      href="#home"
+      class="transition-transform duration-700 fixed z-[40] bottom-5 right-5 min-[500px]:bottom-15 min-[500px]:right-15 shadow-card rounded-[50%] flex items-center justify-center w-[30px] h-[30px] min-[500px]:w-[50px] min-[500px]:h-[50px]"
+      ><i class="fa-solid fa-arrow-up"></i
+    ></a>
+    <header
+      class="fixed -top-5 left-0 right-0 z-10 h-[100px] min-w-[200px] mx-auto"
+    >
+      <nav
+        id="nav"
+        class="max-w-[2000px] mx-auto h-[100px] flex items-center justify-between px-[20px] min-[950px]:px-[100px]"
+      >
+        <h1
+          class="text-[20px] min-[425px]:text-[25px] font-medium font-heading"
+        >
+          Protyush Dey
+        </h1>
+        <div class="max-[950px]:hidden">
+          <ul class="flex gap-[30px] text-[20px] font-medium">
+            <li class="cursor-pointer flex flex-col items-center">
+              <a
+                href="#About"
+                class="hover:text-shadow-hover transition-transform duration-700"
+                >About</a
+              >
+            </li>
+            <li class="cursor-pointer flex flex-col items-center">
+              <a
+                class="hover:text-shadow-hover transition-transform duration-700"
+                href="#Skills"
+                >Skills</a
+              >
+            </li>
+            <li class="cursor-pointer flex flex-col items-center">
+              <a
+                class="hover:text-shadow-hover transition-transform duration-700"
+                href="#Projects"
+                >Projects</a
+              >
+            </li>
+            <li class="cursor-pointer flex flex-col items-center">
+              <a
+                class="hover:text-shadow-hover transition-transform duration-700"
+                href="#Experiences"
+                >Experience</a
+              >
+            </li>
+
+            <li class="cursor-pointer flex flex-col items-center">
+              <a
+                class="hover:text-shadow-hover transition-transform duration-700"
+                href="#Contact"
+                >Contact</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="min-[950px]:hidden">
+          <i
+            class="fa-solid fa-bars text-[15px] min-[425px]:text-[20px]"
+            id="hamburgerOpen"
+          ></i>
+          <div
+            id="hamburgerElement"
+            class="bg-white/30 backdrop-invert backdrop-opacity-10 h-fit w-fit absolute top-[20px] right-[10px] p-[10px] hidden z-[40]"
+          >
+            <div class="flex justify-end">
+              <i
+                id="hamburgerClose"
+                class="fa-solid fa-xmark text-[15px] min-[425px]:text-[20px] p-[5px]"
+              ></i>
+            </div>
+            <ul
+              class="flex flex-col gap-[30px] text-[15px] min-[425px]:text-[20px] p-[20px] min-[470px]:w-[200px]"
+            >
+              <li class="cursor-pointer flex flex-col items-center" onclick="HamNavClose()">
+                <a href="#About">About</a>
+              </li>
+              <li class="cursor-pointer flex flex-col items-center" onclick="HamNavClose()">
+                <a href="#Skills">Skills</a>
+              </li>
+              <li class="cursor-pointer flex flex-col items-center" onclick="HamNavClose()">
+                <a href="#Projects">Projects</a>
+              </li>
+              <li class="cursor-pointer flex flex-col items-center" onclick="HamNavClose()">
+                <a href="#Experiences">Experience</a>
+              </li>
+              <li class="cursor-pointer flex flex-col items-center" onclick="HamNavClose()">
+                <a href="#Contact">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <div
+      id="home"
+      class="max-w-[2000px] mx-auto min-h-[700px] bg-[url(../images/portpholio.jpg)] bg-cover bg-center flex max-[530px]:flex-col max-[530px]:gap[100px] items-center justify-center gap-[30px] min-[850px]:gap-[100px] min-[1100]:gap-[200px] p-[20px] top-[100px] py-[20px]"
+    >
+      <img
+        src="../images/heroimg2.png"
+        class="w-[200px] min-[850px]:w-[300px] mask-b-from-0"
+      />
+      <div class="w-fit flex flex-col gap-[5px] min-[1100px]:gap-[10px]">
+        <h1
+          class="text-[20px] min-[740px]:text-[20px] min-[1100px]:text-[40px] font-medium"
+        >
+          Hello! I'm Protyush Dey
+        </h1>
+        <h2
+          class="text-[15px] min-[740px]:text-[18px] min-[1100px]:text-[25px] font-medium"
+        >
+          A Web Developer & Video Editor
+        </h2>
+        <div
+          class="w-[100%] flex items-center justify-between text-[20px] min-[1100px]:text-[30px]"
+        >
+          <button>
+            <a
+              href="https://www.linkedin.com/in/protyush-dey-31983a265/"
+              target="_blank"
+            >
+              <i
+                class="fa-brands fa-linkedin cursor-pointer hover:text-[40px] duration-300 ease-out hover:text-shadow-hover"
+              ></i>
+            </a>
+          </button>
+
+          <button>
+            <a
+              href="https://www.facebook.com/profile.php?id=100074181275335"
+              target="_blank"
+            >
+              <i
+                class="fa-brands fa-facebook cursor-pointer hover:text-[40px] duration-300 ease-out hover:text-shadow-hover"
+              ></i>
+            </a>
+          </button>
+
+          <button>
+            <a href="https://www.instagram.com/protyush19/" target="_blank">
+              <i
+                class="fa-brands fa-instagram cursor-pointer hover:text-[40px] duration-300 ease-out hover:text-shadow-hover"
+              ></i>
+            </a>
+          </button>
+
+          <button>
+            <a href="https://github.com/Protyush-Dey" target="_blank">
+              <i
+                class="fa-brands fa-github cursor-pointer hover:text-[40px] duration-300 ease-out hover:text-shadow-hover"
+              ></i>
+            </a>
+          </button>
+        </div>
+      </div>
+    </div>
+    <div
+      id="About"
+      class="flex flex-col max-w-[2000px] mx-auto bg items-center p-[20px] max-[370px]:h-[850px]"
+    >
+      <h1 class="text-[30px] font-bold">About</h1>
+      <div
+        class="flex flex-col min-[720px]:flex-row items-center w-full gap-[30px] p-[20px] min-[1000px]:p-[50px] justify-between"
+      >
+        <div class="relative w-fit h-fit border-b-[50%]">
+          <div
+            class="w-[250px] h-[250px] min-[1100px]:w-[350px] min-[740px]:w-[300px] rounded-[50%] min-[1100px]:h-[350px] min-[740px]:h-[300px] bg-amber-500 flex justify-center items-center"
+          ></div>
+          <img
+            class="absolute top-[-64px] w-[248px] min-[740px]:top-[-76px] rounded-[50%] min-[740px]:w-[297px] min-[1100px]:top-[-94px] left-0 min-[1100px]:w-[348px]"
+            src="../images/photo-removebg-preview(1).png"
+            alt=""
+          />
+        </div>
+
+        <div
+          class="flex flex-col items-center gap:[10px] min-[1000px]:gap-[30px] w-full p-[2px] min-[500px]:p-[30px]"
+        >
+          <ul
+            class="flex justify-between px-[2px] min-[500px]:px-[30px] w-full"
+          >
+            <li
+              class="text-[12px] min-[770px]:text-[15px] min-[900px]:text-[20px] text-amber-600 cursor-pointer aboutB"
+              id="Myself"
+            >
+              Myself
+            </li>
+            <li
+              class="text-[12px] min-[770px]:text-[15px] min-[900px]:text-[20px] cursor-pointer aboutB"
+              id="Education"
+            >
+              Education
+            </li>
+            <li
+              class="text-[12px] min-[770px]:text-[15px] min-[900px]:text-[20px] cursor-pointer aboutB"
+              id="Technical_Skill"
+            >
+              Technical Skill
+            </li>
+            <li
+              class="text-[12px] min-[770px]:text-[15px] min-[900px]:text-[20px] cursor-pointer aboutB"
+              id="Experience"
+            >
+              Experience
+            </li>
+          </ul>
+          <div class="h-[300px] flex items-center w-full min-[1000px]:p-[20px]">
+            <div
+              class="flex about flex-col gap-[15px] items-start p-[20px] h-[300px] w-[110%]"
+              id="Myself_about"
+            >
+              <h3 class="text-[30px]">About Me</h3>
+              <p class="text-[13px] min-[850px]:text-[15px] text-justify">
+                Hi, I'm a passionate Web Developer who loves bringing ideas to
+                life through clean, modern, and user-friendly websites. My goal
+                is to build beautiful and functional digital experiences that
+                not only look great but also deliver smooth performance.
+                Alongside coding, I enjoy video editing as a creative hobby,
+                which helps me blend design sense with technical skills. With a
+                mix of development expertise and creativity, I strive to craft
+                projects that stand out and make an impact.
+              </p>
+            </div>
+
+            <div
+              class="mx-auto w-[80%] flex-col hidden justify-center gap-[10px] min-[1080px]:gap-[30px] items-center about"
+              id="Education_about"
+            >
+              <div class="flex items-center gap-[10px] min-[1080px]:gap-[20px] justify-center w-full">
+                <h3
+                  class="text-[11px] min-[560px]:text-[15px] min-[800px]:text-[18px] min-[1080px]:text-[22px] font-medium"
+                >
+                  Haldia Istitute Of Technology
+                </h3>
+                <img
+                  class="w-[25px] min-[860px]:w-[40px]"
+                  src="../images/Hit.png"
+                  alt=""
+                />
+              </div>
+              <div
+                class="flex flex-col items-start justify-between gap-[20px] w-fit"
+              >
+                <p
+                  class="text-[10px] min-[560px]:text-[15px] min-[860px]:text-[18px]"
+                >
+                  Course: B.Tech
+                </p>
+                <p
+                  class="text-[10px] min-[560px]:text-[15px] min-[860px]:text-[18px]"
+                >
+                  Branch: Electronics and Communination Eng.
+                </p>
+                <p
+                  class="text-[10px] min-[560px]:text-[15px] min-[860px]:text-[18px]"
+                >
+                  Session: 2022-2026
+                </p>
+                <p
+                  class="text-[10px] min-[560px]:text-[15px] min-[860px]:text-[18px]"
+                >
+                  CGPA: 8.15
+                </p>
+              </div>
+              <a
+                class="min-[1000px]:w-[150px] min-[1000px]:p-[10px] w-[100px] p-[5px] rounded-[25px] bg-lime-400 text-black text-[15px] hover:bg-lime-500 hover:scale-105 hover:shadow-lg transition-all duration-300 ease-in-out flex justify-center items-center gap-[5px]"
+                href="https://drive.google.com/drive/folders/1E0w4QJWKZK4UsONO6XpQ6Obk2fZPFaG4?usp=sharing"
+                target="_blank"
+                class="min-[1000px]:text-[18px] text-[10px]"
+                >Resume<i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+            <div
+              class="hidden flex-col gap-[30px] items-start p-[20px] h-[300px] about"
+              id="Technical_Skill_about"
+            >
+              <h3 class="text-[30px]">Technical Skill</h3>
+              <p class="text-[13px] min-[850px]:text-[15px] text-justify">
+                I have developed strong technical expertise in web development,
+                with hands-on experience in HTML, CSS, Tailwind CSS, JavaScript,
+                TypeScript, and React for building responsive and interactive
+                user interfaces. Along with frontend skills, I also work with
+                Java, which strengthens my problem-solving and backend
+                development capabilities. These skills allow me to create
+                modern, efficient, and visually appealing websites that deliver
+                smooth user experiences.
+              </p>
+            </div>
+            <div
+              class="hidden flex-col gap-[30px] items-start p-[20px] h-[300px] about"
+              id="Experience_about"
+            >
+              <h3 class="text-[30px]">Experience</h3>
+              <p class="text-[13px] min-[850px]:text-[15px] text-justify">
+                I am currently pursuing an internship at Capsitech IT Services
+                Private Limited in the field of Web Development. During this
+                internship, I am working on real-world projects where I apply my
+                skills in HTML, CSS, Tailwind CSS, JavaScript, TypeScript,
+                React, and Java. This experience is helping me deepen my
+                technical knowledge, improve problem-solving abilities, and gain
+                valuable exposure to professional development practices in the
+                IT industry.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="flex flex-col items-center max-w-[2000px] gap-[20px] mx-auto"
+      id="Skills"
+    >
+      <h1 class="min-[1000px]:text-[30px] text-[20px] font-bold">My Skills</h1>
+      <div
+        class="w-full grid-cols-1 min-[380px]:grid grid-cols-2 min-[1100px]:grid-cols-4 min-[700px]:grid-cols-4 place-items-center p-[30px] gap-[20px]"
+      >
+        <div class="h-[170px]">
+          <div
+            class="hover:shadow-hover shadow-skill w-[150px] h-[150px] rounded-[15px] flex flex-col items-center justify-center gap-[20px] group hover:w-[160px] hover:h-[160px] duration-300 ease-out p-[10px]"
+          >
+            <div
+              class="h-[70px] group-hover:w-[80px] group-hover:h-[80px] w-[70px] rounded-[50%] flex justify-center items-center"
+              id="html"
+            >
+              <div
+                class="h-[60px] w-[60px] bg-white flex flex-col justify-center items-center rounded-[50%] group-hover:w-[70px] group-hover:h-[70px]"
+              >
+                <p class="text-[20px] group-hover:text-[24px]">85%</p>
+              </div>
+            </div>
+            <div class="flex justify-center items-center">
+              <p class="text-[15px] group-hover:text-[17px] font-medium">
+                Html
+              </p>
+              <img src="../images/html.png" class="w-[34px]" alt="" />
+            </div>
+          </div>
+        </div>
+        <div class="h-[170px]">
+          <div
+            class="hover:shadow-hover shadow-skill w-[150px] h-[150px] rounded-[15px] flex flex-col items-center justify-center gap-[20px] group hover:w-[160px] hover:h-[160px] duration-300 ease-out p-[10px]"
+          >
+            <div
+              class="h-[70px] group-hover:w-[80px] group-hover:h-[80px] w-[70px] rounded-[50%] flex justify-center items-center"
+              id="css"
+            >
+              <div
+                class="h-[60px] w-[60px] bg-white flex flex-col justify-center items-center rounded-[50%] group-hover:w-[70px] group-hover:h-[70px]"
+              >
+                <p class="text-[20px] group-hover:text-[24px]">85%</p>
+              </div>
+            </div>
+            <div class="flex justify-center items-center">
+              <p class="text-[15px] group-hover:text-[17px] font-medium">Css</p>
+              <img src="../images/css.png" class="w-[34px]" alt="" />
+            </div>
+          </div>
+        </div>
+        <div class="h-[170px]">
+          <div
+            class="hover:shadow-hover shadow-skill w-[150px] h-[150px] rounded-[15px] flex flex-col items-center justify-center gap-[20px] group hover:w-[160px] hover:h-[160px] duration-300 ease-out p-[10px]"
+          >
+            <div
+              class="h-[70px] group-hover:w-[80px] group-hover:h-[80px] w-[70px] rounded-[50%] flex justify-center items-center"
+              id="js"
+            >
+              <div
+                class="h-[60px] w-[60px] bg-white flex flex-col justify-center items-center rounded-[50%] group-hover:w-[70px] group-hover:h-[70px]"
+              >
+                <p class="text-[20px] group-hover:text-[24px]">75%</p>
+              </div>
+            </div>
+            <div class="flex justify-center items-center">
+              <p class="text-[15px] group-hover:text-[17px] font-medium">
+                Javascript
+              </p>
+              <img src="../images/js.png" class="w-[34px]" alt="" />
+            </div>
+          </div>
+        </div>
+        <div class="h-[170px]">
+          <div
+            class="hover:shadow-hover shadow-skill w-[150px] h-[150px] rounded-[15px] flex flex-col items-center justify-center gap-[20px] group hover:w-[160px] hover:h-[160px] duration-300 ease-out p-[10px]"
+          >
+            <div
+              class="h-[70px] group-hover:w-[80px] group-hover:h-[80px] w-[70px] rounded-[50%] flex justify-center items-center"
+              id="ts"
+            >
+              <div
+                class="h-[60px] w-[60px] bg-white flex flex-col justify-center items-center rounded-[50%] group-hover:w-[70px] group-hover:h-[70px]"
+              >
+                <p class="text-[20px] group-hover:text-[24px]">70%</p>
+              </div>
+            </div>
+            <div class="flex justify-center items-center">
+              <p class="text-[15px] group-hover:text-[17px] font-medium">
+                Typescript
+              </p>
+              <img src="../images/ts.png" class="w-[34px]" alt="" />
+            </div>
+          </div>
+        </div>
+        <div class="h-[170px]">
+          <div
+            class="hover:shadow-hover shadow-skill w-[150px] h-[150px] rounded-[15px] flex flex-col items-center justify-center gap-[20px] group hover:w-[160px] hover:h-[160px] duration-300 ease-out p-[10px]"
+          >
+            <div
+              class="h-[70px] group-hover:w-[80px] group-hover:h-[80px] w-[70px] rounded-[50%] flex justify-center items-center"
+              id="tail"
+            >
+              <div
+                class="h-[60px] w-[60px] bg-white flex flex-col justify-center items-center rounded-[50%] group-hover:w-[70px] group-hover:h-[70px]"
+              >
+                <p class="text-[20px] group-hover:text-[24px]">70%</p>
+              </div>
+            </div>
+            <div class="flex justify-center items-center">
+              <p class="text-[15px] group-hover:text-[17px] font-medium">
+                tailwind
+              </p>
+              <img src="../images/tail.png" class="w-[34px]" alt="" />
+            </div>
+          </div>
+        </div>
+        <div class="h-[170px]">
+          <div
+            class="hover:shadow-hover shadow-skill w-[150px] h-[150px] rounded-[15px] flex flex-col items-center justify-center gap-[20px] group hover:w-[160px] hover:h-[160px] duration-300 ease-out p-[10px]"
+          >
+            <div
+              class="h-[70px] group-hover:w-[80px] group-hover:h-[80px] w-[70px] rounded-[50%] flex justify-center items-center"
+              id="java"
+            >
+              <div
+                class="h-[60px] w-[60px] bg-white flex flex-col justify-center items-center rounded-[50%] group-hover:w-[70px] group-hover:h-[70px]"
+              >
+                <p class="text-[20px] group-hover:text-[24px]">80%</p>
+              </div>
+            </div>
+            <div class="flex justify-center items-center">
+              <p class="text-[15px] group-hover:text-[17px] font-medium">
+                Java
+              </p>
+              <img src="../images/java.png" class="w-[34px]" alt="" />
+            </div>
+          </div>
+        </div>
+        <div class="h-[170px]">
+          <div
+            class="hover:shadow-hover shadow-skill w-[150px] h-[150px] rounded-[15px] flex flex-col items-center justify-center gap-[20px] group hover:w-[160px] hover:h-[160px] duration-300 ease-out p-[10px]"
+          >
+            <div
+              class="h-[70px] group-hover:w-[80px] group-hover:h-[80px] w-[70px] rounded-[50%] flex justify-center items-center"
+              id="react"
+            >
+              <div
+                class="h-[60px] w-[60px] bg-white flex flex-col justify-center items-center rounded-[50%] group-hover:w-[70px] group-hover:h-[70px]"
+              >
+                <p class="text-[20px] group-hover:text-[24px]">60%</p>
+              </div>
+            </div>
+            <div class="flex justify-center items-center">
+              <p class="text-[15px] group-hover:text-[17px] font-medium">
+                React
+              </p>
+              <img
+                src="../images/react.png"
+                class="w-[34px]"
+                class="w-[48px]"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+        <div class="h-[170px]">
+          <div
+            class="hover:shadow-hover shadow-skill w-[150px] h-[150px] rounded-[15px] flex flex-col items-center justify-center gap-[20px] group hover:w-[160px] hover:h-[160px] duration-300 ease-out p-[10px]"
+          >
+            <div
+              class="h-[70px] group-hover:w-[80px] group-hover:h-[80px] w-[70px] rounded-[50%] flex justify-center items-center"
+              id="video"
+            >
+              <div
+                class="h-[60px] w-[60px] bg-white flex flex-col justify-center items-center rounded-[50%] group-hover:w-[70px] group-hover:h-[70px]"
+              >
+                <p class="text-[20px] group-hover:text-[24px]">50%</p>
+              </div>
+            </div>
+            <div class="flex justify-center items-center">
+              <p class="text-[15px] group-hover:text-[17px] font-medium">
+                Video Editing
+              </p>
+              <img src="../images/video.png" class="w-[34px]" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="flex flex-col items-center justify-center min-[1000px]:gap-[50px] gap-[20px] max-w-[2000px] mx-auto"
+      id="Projects"
+    >
+      <h1 class="min-[1000px]:text-[30px] text-[20px] font-bold">
+        Recent Projects
+      </h1>
+      <p class="min-[1000px]:text-[18px] text-[13px]">
+        Here are some of my selected projects.
+      </p>
+
+      <div
+        class="flex flex-col items-center gap-[50px] max-w-[80vw] mx-auto rounded-[15px] min-[1000px]:flex-row min-[1000px]:justify-center min-[1000px]:p-[40px] w-full"
+      >
+        <div
+          class="min-[1000px]:w-[500px] w-full rounded-[10px] shadow-card h-[400px] flex items-center max-[1000px]:h-fit"
+        >
+          <img
+            class="w-[100%] rounded-[10px]"
+            src="../images/project/weatherApp.png"
+            alt=""
+          />
+        </div>
+        <div
+          class="min-[1000px]:w-[50%] flex flex-col min-[1000px]:gap-[20px] gap-[5px] w-[100%]"
+        >
+          <h2 class="min-[1000px]:text-[30px] text-[20px] font-medium">
+            Weather Website
+          </h2>
+          <p class="min-[1000px]:text-[18px] text-[10px] text-justify">
+            I built a Weather Website using React and Tailwind that fetches
+            real-time data through an API call. Users can search for any city
+            and view details like temperature, weather conditions, humidity, and
+            wind speed. This project improved my skills in API integration and
+            creating responsive, user-friendly web applications.
+          </p>
+          <div class="flex flex-col gap-[10px]">
+            <h3 class="min-[1000px]:text-[28px] text-[22px]">Project Info</h3>
+            <div class="w-[100%] h-[1.5px] bg-gray-800"></div>
+            <div class="flex items-center justify-between p-[10px] text-[18px]">
+              <p class="min-[1000px]:text-[18px] text-[10px]">Year</p>
+              <p class="min-[1000px]:text-[18px] text-[10px]">2025</p>
+            </div>
+            <div class="w-[100%] h-[1.5px] bg-gray-800"></div>
+            <div class="flex items-center justify-between p-[10px] text-[18px]">
+              <p class="min-[1000px]:text-[18px] text-[10px]">Role</p>
+              <p class="min-[1000px]:text-[18px] text-[10px]">Developer</p>
+            </div>
+            <button
+              class="bg-gray-300 hover:bg-gray-400 w-[100%] mx-auto h-[35px] rounded-[5px]"
+            >
+              <a
+                href="https://github.com/Protyush-Dey/Weather-App"
+                target="_blank"
+                >GitHub
+                <i class="fa-brands fa-github cursor-pointer"></i>
+              </a>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div
+        class="flex flex-col-reverse items-center gap-[50px] max-w-[80vw] mx-auto rounded-[15px] min-[1000px]:flex-row min-[1000px]:justify-center min-[1000px]:p-[40px] w-full"
+      >
+        <div
+          class="min-[1000px]:w-[50%] flex flex-col min-[1000px]:gap-[20px] gap-[5px] w-[100%]"
+        >
+          <h2 class="min-[1000px]:text-[30px] text-[20px] font-medium">
+            Quiz website
+          </h2>
+          <p class="min-[1000px]:text-[18px] text-[10px] text-justify">
+            I built a Quiz App using React, TypeScript, and Tailwind CSS. It
+            features multiple-choice questions, real-time score tracking, and
+            result display. TypeScript ensured clean, error-free code, while
+            Tailwind helped create a modern.
+          </p>
+          <div class="flex flex-col gap-[10px]">
+            <h3 class="min-[1000px]:text-[28px] text-[22px]">Project Info</h3>
+            <div class="w-[100%] h-[1.5px] bg-gray-800"></div>
+            <div class="flex items-center justify-between p-[10px] text-[18px]">
+              <p class="min-[1000px]:text-[18px] text-[10px]">Year</p>
+              <p class="min-[1000px]:text-[18px] text-[10px]">2025</p>
+            </div>
+            <div class="w-[100%] h-[1.5px] bg-gray-800"></div>
+            <div class="flex items-center justify-between p-[10px] text-[18px]">
+              <p class="min-[1000px]:text-[18px] text-[10px]">Role</p>
+              <p class="min-[1000px]:text-[18px] text-[10px]">Developer</p>
+            </div>
+            <button
+              class="bg-gray-300 hover:bg-gray-400 w-[100%] mx-auto h-[35px] rounded-[5px]"
+            >
+              <a href="https://github.com/Protyush-Dey/Quiz_App" target="_blank"
+                >GitHub
+                <i class="fa-brands fa-github cursor-pointer"></i>
+              </a>
+            </button>
+          </div>
+        </div>
+        <div
+          class="min-[1000px]:w-[500px] w-full rounded-[10px] shadow-card h-[400px] flex items-center max-[1000px]:h-fit"
+        >
+          <img
+            class="w-[100%] rounded-[10px]"
+            src="../images/project/quizapp.png"
+            alt=""
+          />
+        </div>
+      </div>
+      <div
+        class="flex flex-col items-center gap-[50px] max-w-[80vw] mx-auto rounded-[15px] min-[1000px]:flex-row min-[1000px]:justify-center min-[1000px]:p-[40px] w-full"
+      >
+        <div
+          class="min-[1000px]:w-[500px] w-full rounded-[10px] shadow-card h-[400px] flex items-center max-[1000px]:h-fit"
+        >
+          <img
+            class="w-[100%] rounded-[10px]"
+            src="../images/project/taskmanager.png"
+            alt=""
+          />
+        </div>
+        <div
+          class="min-[1000px]:w-[50%] flex flex-col min-[1000px]:gap-[20px] gap-[5px] w-[100%]"
+        >
+          <h2 class="min-[1000px]:text-[30px] text-[20px] font-medium">
+            Task Manager
+          </h2>
+          <p class="min-[1000px]:text-[18px] text-[10px] text-justify">
+            I developed a Task Manager App using React and TypeScript that
+            performs simple CRUD operations. Users can add, edit, delete, and
+            manage tasks easily. The project improved my understanding of state
+            management, component structure, and responsive UI design with
+            Tailwind CSS.
+          </p>
+          <div class="flex flex-col gap-[10px]">
+            <h3 class="min-[1000px]:text-[28px] text-[22px]">Project Info</h3>
+            <div class="w-[100%] h-[1.5px] bg-gray-800"></div>
+            <div class="flex items-center justify-between p-[10px] text-[18px]">
+              <p class="min-[1000px]:text-[18px] text-[10px]">Year</p>
+              <p class="min-[1000px]:text-[18px] text-[10px]">2025</p>
+            </div>
+            <div class="w-[100%] h-[1.5px] bg-gray-800"></div>
+            <div class="flex items-center justify-between p-[10px] text-[18px]">
+              <p class="min-[1000px]:text-[18px] text-[10px]">Role</p>
+              <p class="min-[1000px]:text-[18px] text-[10px]">Developer</p>
+            </div>
+            <button
+              class="bg-gray-300 hover:bg-gray-400 w-[100%] mx-auto h-[35px] rounded-[5px]"
+            >
+              <a
+                href="https://github.com/Protyush-Dey/TasksManager"
+                target="_blank"
+                >GitHub
+                <i class="fa-brands fa-github cursor-pointer"></i>
+              </a>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <a
+        class="min-[1000px]:w-[150px] min-[1000px]:p-[10px] w-[100px] p-[5px] rounded-[25px] bg-lime-400 text-black text-[15px] hover:bg-lime-500 hover:scale-105 hover:shadow-lg transition-all duration-300 ease-in-out flex justify-center items-center gap-[5px]"
+        href="./Project.html"
+        target="_blank"
+        class="min-[1000px]:text-[18px] text-[10px]"
+        >See more <i class="fa-solid fa-arrow-up-right-from-square"></i
+      ></a>
+    </div>
+    <div
+      class="flex flex-col items-center my-[30px] mt-[50px] max-w-[2000px] mx-auto"
+      id="Experiences"
+    >
+      <h1 class="min-[1000px]:text-[30px] text-[20px] font-bold">
+        My Experiences
+      </h1>
+      <div
+        class="flex min-[940px]:flex-row flex-col items-center min-[940px]:my-[50px] justify-between min-[940px]:px-[100px] w-full"
+      >
+        <img
+          src="../images/capsitech.png"
+          class="min-[560px]:w-[300px] w-[150px] min-[940px]:w-[500px]"
+          alt=""
+        />
+        <div
+          class="min-[940px]:w-[1000px] flex flex-col items-start min-[940px]:my-[50px] w-[300px] min-[560px]:w-[500px] min-[560px]:gap-[10px] gap-[5px] min-[940px]:gap-[20px]"
+        >
+          <h3
+            class="min-[940px]:text-[30px] min-[560px]:text-[20px] text-[15px] font-bold"
+          >
+            Internship
+          </h3>
+          <p
+            class="min-[940px]:text-[20px] min-[560px]:text-[15px] text-[8px] text-justify"
+          >
+            I am currently pursuing an internship at Capsitech IT Services
+            Private Limited as a Web Developer Intern. In this role, I am
+            gaining hands-on experience by working on live projects using HTML,
+            CSS, Tailwind CSS, JavaScript, TypeScript, React, and Java. This
+            internship is helping me strengthen my technical skills, improve
+            problem-solving abilities, and understand industry-level development
+            practices while collaborating with a professional team. It is also
+            giving me exposure to real-world client requirements and helping me
+            learn how to deliver efficient, user-friendly solutions. This
+            experience is a valuable step toward shaping my career as a
+            professional web developer.
+          </p>
+        </div>
+      </div>
+    </div>
+    <footer
+      id="Contact"
+      class="flex max-[710px]:flex-col-reverse bg-amber-100 max-w-[2000px] gap-[20px] mx-auto min-[710]:p-[50px] min-[710]:px-[100px] py-[30px]"
+    >
+      <div
+        class="w-[300px] max-[710px]:w-[40%] flex flex-col gap-[20px] mx-auto"
+      >
+        <div class="flex flex-col gap-[20px]">
+          <h3 class="text-[20px]">Portpholio</h3>
+          <p class="text-[15px] text-justify">
+            I am a passionate Web Developer who loves creating modern,
+            responsive, and user-friendly websites. Along with coding, I enjoy
+            video editing, which adds a creative edge to my work
+          </p>
+        </div>
+        <div
+          class="flex items-center justify-between text-[20px] min-[1100px]:text-[30px]"
+        >
+          <button>
+            <a
+              href="https://www.linkedin.com/in/protyush-dey-31983a265/"
+              target="_blank"
+            >
+              <i class="fa-brands fa-linkedin cursor-pointer"></i>
+            </a>
+          </button>
+
+          <button>
+            <a
+              href="https://www.facebook.com/profile.php?id=100074181275335"
+              target="_blank"
+            >
+              <i class="fa-brands fa-facebook cursor-pointer"></i>
+            </a>
+          </button>
+
+          <button>
+            <a href="https://www.instagram.com/protyush19/" target="_blank">
+              <i class="fa-brands fa-instagram cursor-pointer"></i>
+            </a>
+          </button>
+
+          <button>
+            <a href="https://github.com/Protyush-Dey" target="_blank">
+              <i class="fa-brands fa-github cursor-pointer"></i>
+            </a>
+          </button>
+        </div>
+      </div>
+      <div
+        class="h-[2px] mx-auto w-[80%] min-[710px]:w-[2px] min-[710px]:h-[100%] min-[710px]:my-[30px] min-[710px]:py-[130px] bg-black"
+      ></div>
+      <form action="" class="w-fit flex flex-col gap-[20px] mx-auto">
+        <div class="flex max-[1200px]:flex-col gap-[20px]">
+          <div class="flex flex-col gap-[10px] w-[300px]">
+            <label for="fname" class="text-[8px] min-[710px]:text-[15px]"
+              >First Name</label
+            >
+            <input
+              type="text"
+              name="fname"
+              id="fname"
+              placeholder="Enter Firstname"
+              class="outline-0 bg-amber-50 border-2 forminput text-[8px] min-[710px]:text-[15px] p-[5px] rounded-[5px]"
+            />
+          </div>
+          <div class="flex flex-col gap-[10px] w-[300px]">
+            <label for="fname" class="text-[8px] min-[710px]:text-[15px]"
+              >Last Name</label
+            >
+            <input
+              type="text"
+              name="lname"
+              id="lname"
+              placeholder="Enter Lastname"
+              class="outline-0 bg-amber-50 border-2 forminput text-[8px] min-[710px]:text-[15px] p-[5px] rounded-[5px]"
+            />
+          </div>
+        </div>
+        <div class="flex flex-col gap-[10px]">
+          <label for="email" class="text-[8px] min-[710px]:text-[15px]"
+            >Email</label
+          >
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Enter Email"
+            class="outline-0 bg-amber-50 border-2 text-[8px] forminput min-[710px]:text-[15px] p-[5px] rounded-[5px]"
+          />
+        </div>
+
+        <div class="flex flex-col gap-[10px]">
+          <label for="message" class="text-[8px] min-[710px]:text-[15px]"
+            >message</label
+          >
+          <textarea
+            type="text"
+            name="message"
+            id="message"
+            placeholder="Enter message"
+            class="outline-0 bg-amber-50 border-2 forminput text-[8px] min-[710px]:text-[15px] p-[5px] rounded-[10px] h-[100px]"
+          ></textarea>
+        </div>
+        <button
+          class="text-[8px] min-[710px]:text-[15px] p-[5px] bg-amber-500 rounded-[5px] cursor-pointer"
+          id="formButton"
+        >
+          Submit
+        </button>
+      </form>
+    </footer>
+    <script src="./index.js"></script>
+  </body>
+</html>
